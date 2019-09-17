@@ -1,0 +1,120 @@
+/** SIMPLE CALENDAR **/
+.simcal-day,
+.simcal-calendar-grid{
+	border:1px solid #e1e1e1;
+}
+
+.simcal-calendar-grid thead th{
+	border:none;
+}
+
+.simcal-calendar-grid .simcal-week-day{
+	font-weight: normal;
+}
+
+.simcal-align-right {
+    display: none;
+}
+
+.panel-content--calendar{
+	padding:50px 0;
+	background-color: #f2f2f2;
+}
+
+/** TABLEPRESS **/
+.dataTables_wrapper{
+	margin-bottom: 40px;
+}
+
+.dataTables_paginate.paging_simple .paginate_button.next::after,
+.dataTables_paginate.paging_simple .paginate_button.previous::before{
+	text-shadow: none;
+	font-size: 16px;
+	top:-3px;
+}
+
+.dataTables_paginate.paging_simple a{
+	text-decoration: none;
+	display: inline;
+}
+
+.dataTables_paginate.paging_simple a:hover{
+	color:$lfr-red!important;
+}
+
+.dataTables_paginate.paging_simple .paginate_button.disabled::after,
+.dataTables_paginate.paging_simple .paginate_button.disabled::before,
+.dataTables_paginate.paging_simple .paginate_button.disabled:hover{
+	color:#999!important;
+	border-bottom:none;
+}
+
+.dataTables_paginate.paging_simple .paginate_button.next::after{
+	content:"\2771";
+	color: $lfr-red;
+}
+
+.dataTables_paginate.paging_simple .paginate_button.previous::before{
+	content:"\2770";
+	color: $lfr-red;
+}
+
+/** PAGE MAPS **/
+.map-route iframe{
+  border:none!important;
+  position: absolute;
+	height: 100%;
+	top:0;
+}
+
+#mapo_title{
+	display: none!important;
+}
+
+#mapo_body{
+	margin:0!important;
+}
+
+.gmwd_container_wrapper{
+	margin-bottom: 40px;
+}
+
+pre{
+	background-color: transparent;
+	margin-top: 0;
+	padding:0;
+}
+
+/** EMBEDDED MAPS **/
+.map-route{
+	height: 0;
+	position: relative;
+	padding-top: 65%;
+}
+
+/** CONTACT FORM **/
+input[type="submit"] {
+	background-color: #ffe8e8;
+	color:$lfr-red;
+}
+
+input[type="submit"]:hover{
+	background-color: $lfr-red;
+	color:#fff;
+}
+
+@media screen and ( max-width: 750px ) {
+  /** TABLEPRESS **/
+	.tablepress .column-3,
+	.tablepress .column-4{
+		display: none;
+  }
+  
+	.tablepress.events-list tbody td {
+	    font-size: .8rem;
+  }
+  
+	.tablepress.events-list tbody td.column-1{
+		width: 35%;
+	}
+}

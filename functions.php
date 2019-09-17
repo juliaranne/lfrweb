@@ -21,6 +21,7 @@ function register_my_menus() {
 		'homepage_links' => __('Homepage Links', 'twentyseventeen-child' ),
 		'social' => __( 'Social Links Menu', 'twentyseventeen' ),
 		'members' => __('Members pages', 'twentyseventeen-child' ),
+		'run-menu' => __('Run pages menu', 'twentyseventeen-child' ),
 	) );
 } 
 add_action( 'init', 'register_my_menus' );

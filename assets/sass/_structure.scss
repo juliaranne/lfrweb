@@ -1,0 +1,110 @@
+/** PAGE STRUCTURE **/
+body.page-two-column:not(.archive) #primary .entry-content,
+body.page-two-column:not(.archive) #primary .entry-header{
+	float: none;
+	width: 100%;
+}
+
+.navigation-top .wrap,
+.wrap{
+	max-width: 1300px;
+}
+
+.panel-content .wrap--home{
+	padding-bottom: 10px;
+}
+
+.site-content .wrap{
+	position: relative;
+	padding-top: 50px;
+}
+
+.site-content{
+	padding:0;
+}
+
+.site-content-contain {
+    background-color: #fff;
+}
+
+.custom-header-media::before{
+	background: none;
+}
+
+.entry-content{
+	margin-bottom: 10px;
+}
+
+/** PAGE IMAGES **/
+
+.entry-content img{
+	margin-bottom: 30px;
+}
+
+@media screen and ( min-width: 48em ) {
+	.wrap{
+		padding-left: 2em;
+		padding-right: 2em;
+	}
+}
+
+@media screen and ( max-width: 48em ) {
+	html{
+		margin-top: 0!important;
+  }
+  
+	.page:not(.home) #content {
+	    padding-bottom: 3.5em;
+  }
+
+  /** LAYOUT **/
+	.site-content .wrap {
+    padding-top: 40px;
+  }
+
+  .wrap{
+    padding-right: 25px;
+    padding-left: 25px;
+  }
+
+  .navigation-top .wrap {
+      padding: 0 25px;
+  }
+
+  .footer .wrap {
+      padding: 40px 25px 0 25px;
+  }
+
+  .site-info{
+    right: 25px;
+  }
+
+  .lfr-logo {
+      margin-bottom: 15px;
+  }
+}
+
+@media screen and ( max-width: 750px ) {
+  .wrap{
+		padding-right: 15px;
+		padding-left: 15px;
+  }
+  
+	.navigation-top .wrap {
+	  padding: 0 15px;
+  }
+  
+	.footer .wrap {
+	  padding: 40px 15px 0 15px;
+  }
+  
+	.site-info{
+		right: 15px;
+  }
+  
+	.page:not(.home) #content {
+	  padding-bottom: 50px;
+	  padding-top: 20px;
+	}
+
+}

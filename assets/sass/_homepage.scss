@@ -1,0 +1,232 @@
+/** HOMEPAGE HEADER **/
+body.home .entry-content{
+	margin-bottom: 10px;
+}
+
+.lfr-tagline{
+	padding-top: 12px;
+	font-size: 21px;
+	line-height: 1.35em;
+  color:$lfr-red;
+  font-family: monospace;
+  margin-bottom: 80px;
+}
+
+.lfr-logo{
+	margin-bottom: 40px;
+}
+
+.panel-content .entry-header{
+	margin-bottom: 30px;
+}
+
+.calendar-link{
+	font-size: 18px;
+	margin-top: 50px;
+	display: inline-block;
+}
+
+/** HOMEPAGE EVENTS LIST **/
+.tablepress.events-list{
+	border: 1px solid #000;
+	max-width: 700px;
+}
+
+.tablepress.events-list tbody td{
+	border-bottom: 1px solid #000;
+}
+
+.tablepress.events-list tbody td.column-1{
+	border-right:1px solid #000;
+	width: 25%;
+}
+
+.calendar-link{
+	margin-top:10px;
+	display: block;
+	font-weight: 600;
+	font-size: 17px;
+	color: $lfr-red;
+}
+
+.calendar-title{color:$lfr-red;}
+
+.calendar-link:hover{
+	color:$lfr-red;
+}
+
+/** WIDGETS **/
+.homepage-features{
+	margin-top: 40px;
+	margin-bottom: 40px;
+}
+
+.homepage-features .image-wrapper:nth-child(even){
+	margin-right: 0;
+}
+
+h2.widget-title{
+	text-transform: none;
+	font-weight: normal;
+	letter-spacing: 0.01em;
+	font-size: 20px;
+	margin-bottom: 10px;
+}
+
+.widget {
+    padding-bottom: 20px;
+}
+
+.footer__links{
+	padding-top: 0;
+}
+
+.hp-item{
+	position: relative;
+	display: inline-block;
+	width: 100%;
+	padding-bottom: 65%;
+	overflow: hidden;
+	height: 0;
+}
+
+.image-wrapper{
+	display: inline-block;
+	width: 49%;
+	margin-right: 2%;
+	position: relative;
+	margin-bottom: 20px;
+}
+
+.homepage-features .image-wrapper:last-of-type{
+	margin-right: 0;
+}
+
+.splash-title{
+	font-size: 18px;
+	position: absolute;
+	bottom: 7px;
+	margin-bottom: 0;
+	width: 100%;
+	padding: 12px 0 8px 10px;
+	background-color:rgba(255,255,255, 0.6);
+}
+
+.image-link img{
+    height: 100%;
+    width: auto;
+    max-width: initial;
+    min-width: 100%;
+    position: absolute;
+    left:50%;
+    transform: translateX(-50%);  
+}
+
+.image-link .textwidget{
+	line-height: 0.7em;
+}
+
+.image-link:hover a{
+	border-bottom: none;
+}
+
+.image-link:hover img{
+	opacity: 1;
+}
+
+
+@media screen and ( max-width: 48em ) {
+  	/** HOMEPAGE MENU **/
+	.menu-homepage-links h2.widget-title {
+    font-size: 23px;
+  }
+
+  .menu-homepage-links .menu {
+    font-size: 18px;
+  }
+
+  .menu-homepage-links .menu-item a {
+      font-size: 18px;
+  }
+
+  .member-link{top:-20px;}
+  body.home .member-link{
+    top:30px;
+  }
+
+  /** HOMEPAGE NEWS **/
+  .sidebar{
+    width: 100%;
+  }
+
+  .entry-content h6{
+    width: 100%;
+    margin-right: 0;
+  }
+
+  /** HOMEPAGE **/
+  .panel-content--calendar{
+    padding:0 0 20px 0;
+  }
+
+  body.home .homepage-sidebar .widget {
+    width: 100%;
+    padding-right: 0;
+    float: none;
+    padding-bottom: 0;
+  }
+
+  .image-link .widget-title {
+    bottom: -46px;
+  }
+}
+
+@media screen and ( max-width: 750px ) {
+  .news-posts {
+    padding: 0;
+  }
+
+  .entry-content .homepage-news-title{
+    font-size: 22px;
+  }
+
+  .image-wrapper {
+    display: block;
+    width: 100%;
+    margin-right: 0;
+  }
+
+  .image-link img{
+    height: 100%;
+    max-height: initial;
+    opacity: 1;
+  }
+
+  .menu-homepage-links .menu {
+      max-width: 100%;
+  }
+
+  body.home hr{
+    display: none;
+  }
+
+  .panel-content .wrap--home{
+		padding-top: 50px;
+  }
+  
+  /** HOMEPAGE **/
+	.sidebar__block {
+    padding: 15px 0 15px 15px;
+    margin-bottom: 30px;
+  }
+
+  .entry-content .sidebar__block p{
+    font-size: 14px;
+  }
+  
+  .calendar-link, .entry-content .news-link{
+    font-size: 15px;
+  }
+}
+
+

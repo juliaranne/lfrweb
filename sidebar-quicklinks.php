@@ -15,6 +15,6 @@ if ( ! is_active_sidebar( 'quick-links' ) ) {
 }
 ?>
 
-<div class="widget-area" role="complementary">
+<div class="footer__links" role="complementary">
 	<?php dynamic_sidebar( 'sidebar-3' ); ?>
 </div><!-- #secondary -->

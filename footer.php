@@ -16,14 +16,21 @@
 
 		</div><!-- #content -->
 
-		<footer id="colophon" class="site-footer" role="contentinfo">
+		<footer id="colophon" class="footer" role="contentinfo">
 			<div class="wrap">
 				<?php
-				get_template_part( 'template-parts/footer/site', 'info' );
-				get_template_part( 'template-parts/footer/footer', 'widgets' );
-				get_template_part( 'template-parts/footer/footer', 'tags' );
+					get_template_part( 'template-parts/footer/footer', 'widgets' );
+					get_template_part( 'template-parts/footer/footer', 'tags' );
+				?>
+				<div class="footer__links footer__links--sub">
+					<?php dynamic_sidebar( 'sidebar-3' ); ?>
+				</div>
 
-				if ( has_nav_menu( 'social' ) ) : ?>
+				<?php
+					get_template_part( 'template-parts/footer/site', 'info' );
+				?>
+
+				<?php if ( has_nav_menu( 'social' ) ) : ?>
 					<nav class="social-navigation" role="navigation" aria-label="<?php esc_attr_e( 'Footer Social Links Menu', 'twentyseventeen' ); ?>">
 						<?php
 							wp_nav_menu( array(
@@ -35,13 +42,7 @@
 							) );
 						?>
 					</nav><!-- .social-navigation -->
-				<?php endif;
-
-				
-				?>
-				<div class="footer__links widget-area">
-					<?php dynamic_sidebar( 'sidebar-3' ); ?>
-				</div>
+				<?php endif; ?>
 			</div><!-- .wrap -->
 		</footer><!-- #colophon -->
 	</div><!-- .site-content-contain -->

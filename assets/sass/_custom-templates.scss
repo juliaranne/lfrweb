@@ -1,0 +1,75 @@
+body:not(.twentyseventeen-front-page) .entry-content__with-menu{float: left;}
+body.page-two-column:not(.archive) #primary .entry-content__with-menu{
+	width: 75%;
+	float: left;
+}
+
+.inpage-menu{
+	float: left;
+	width: 25%;
+}
+
+.inpage-menu-list{
+	max-width: 90%;
+	border-bottom: 1px dotted $lfr-red;
+	margin-right: 10%;
+}
+
+.inpage-menu-item{
+	padding:8px 0 4px;
+	border-top:1px dotted $lfr-red;
+}
+
+.inpage-menu-item a{
+	color:$lfr-red;
+	display: block;
+}
+
+.content-area--calendar{
+	width: 100%;
+}
+
+.panel-content .wrap--calendar{
+	padding-top: 0;
+	padding-bottom: 20px;
+}
+
+/** COMMITTEE PAGE **/
+.text-red{color:$lfr-red;}
+
+.entry-content .title-no-margin{margin-top:0;}
+
+.page-template-page_people .entry-content img{
+	display: inline-block;
+	max-width: 44%;
+	margin-bottom: 10px;
+	clear: both;
+	float: none;
+	margin-right: 15px;
+}
+
+@media screen and ( max-width: 48em ) {
+	body.page-two-column:not(.archive) #primary .entry-content__with-menu {width: 100%;}
+
+	.inpage-menu {
+		width: 100%;
+		margin-bottom: 35px;
+	}
+
+	.inpage-menu-list {
+		margin-left: 0;
+		max-width: 100%;
+	}
+
+	.inpage-menu-item{font-size:14px;}
+
+	.calendar-link{
+		margin-top: 0;
+	}
+}
+
+@media screen and ( max-width: 750px ) {
+	.inpage-menu-item{font-size:16px;}
+}
+
+
