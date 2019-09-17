@@ -34,7 +34,7 @@
 			<header class="entry-header">
 				<div class="lfr-logo">
 					<a href="/">
-						<img src="<?php echo get_theme_file_uri( '/assets/images/lfr_logo.png' ); ?>" alt="London Frontrunners logo" />
+						<img class="lfr-logo__image lfr-logo__image--home" src="<?php echo get_theme_file_uri( '/assets/images/lfr_logo.png' ); ?>" alt="London Frontrunners logo" />
 					</a>
 					<h2 class="lfr-tagline">London's inclusive running club for LGBT+ and gay-friendly people</h2>
 				</div>

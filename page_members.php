@@ -13,7 +13,7 @@ get_header(); ?>
 		
 		<div class="lfr-logo">
 			<a href="/">
-				<img src="<?php echo get_theme_file_uri( '/assets/images/logoSized-1.png' ); ?>" alt="London Frontrunners logo" />
+				<img class="lfr-logo__image" src="<?php echo get_theme_file_uri( '/assets/images/logoSized-1.png' ); ?>" alt="London Frontrunners logo" />
 			</a>
 		</div>
 

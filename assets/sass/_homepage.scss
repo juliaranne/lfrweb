@@ -4,16 +4,19 @@ body.home .entry-content{
 }
 
 .lfr-tagline{
-	padding-top: 12px;
+	padding-top: 15px;
 	font-size: 21px;
 	line-height: 1.35em;
   color:$lfr-red;
-  font-family: monospace;
   margin-bottom: 80px;
 }
 
 .lfr-logo{
-	margin-bottom: 40px;
+	margin-bottom: 20px;
+}
+
+.lfr-logo__image--home {
+  width: 400px;
 }
 
 .panel-content .entry-header{

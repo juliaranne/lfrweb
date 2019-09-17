@@ -1,7 +1,7 @@
 .navigation-top{
 	background: $lfr-red;
 	border: none;
-	font-size: 19px;
+	font-size: 17px;
 }
 
 .navigation-top .wrap{
@@ -15,17 +15,16 @@
 .navigation-top a{
 	font-weight: 600;
 	color:white;
-  transition: background-color .25s linear, color .25s linear;
+  transition: $transition;
 }
 
 .main-navigation a {
-  padding: 8px 15px;
+  padding: 16px 15px;
   font-weight: normal;
-  border-radius: 3px;
 }
 
 .main-navigation li li a{
-  transition: background-color .25s linear, color .25s linear;
+  transition: $transition;
 }
 
 .navigation-top a:hover{
@@ -38,8 +37,8 @@
 }
 
 .navigation-top .current-menu-item > a, .navigation-top .current_page_item > a {
-  color: #fff;
-  background-color: #ff5e5e;
+  color: $lfr-red;
+  background-color: white;
 }
 
 .navigation-top .current_page_item > a:hover {
@@ -77,8 +76,8 @@
   padding: 7em 0;
 }
 
-.lfr-logo img{
-  width: 400px;
+.lfr-logo__image{
+  width: 300px;
   height: auto;
 }
 
@@ -149,7 +148,7 @@
 
 @media screen and ( min-width: 48em ) {
 	.main-navigation > div > ul{
-		padding:8px 0;
+		padding: 0;
   }
   
 	.admin-bar.twentyseventeen-front-page.has-header-image .custom-header-media{

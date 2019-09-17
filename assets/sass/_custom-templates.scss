@@ -9,6 +9,28 @@ body.page-two-column:not(.archive) #primary .entry-content__with-menu{
 	width: 25%;
 }
 
+/** new menu **/
+.inpage-menu {
+	.menu {
+		list-style-type: none;
+		margin-right: 50px;
+	}
+	.menu-item {
+		a {
+			display: block;
+			padding: 5px 10px;
+			border-bottom: 3px solid white;
+			color: $lfr-red;
+			background-color: $lightgrey;
+			transition: $transition;
+		}
+		a:hover {
+			color: white;
+			background-color: $lfr-red;
+		}
+	}
+}
+
 .inpage-menu-list{
 	max-width: 90%;
 	border-bottom: 1px dotted $lfr-red;
