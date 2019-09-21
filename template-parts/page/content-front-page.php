@@ -48,13 +48,13 @@
 				<aside class="sidebar sidebar--home">
 					<div class="sidebar__block">
 						<h2 class="sidebar__title">News + Announcements</h2>
-						<div class="news-posts">
+						<div class="news">
 							<?php
 								$query = new WP_Query( array( 'category_name' => 'homepage-news,announcement' ) );
 								if( $query->have_posts() ) : while( $query->have_posts() ) : $query->the_post(); ?>
 									<?php if ( in_category( 'homepage-news' ) ) : ?>
-										<h2 class="news-title">
-											<a href="<?php echo get_post_meta($post->ID, 'link-to', true); ?>" class="news-title__link"><?php the_title();/*3*/ ?></a>
+										<h2 class="news__title">
+											<a href="<?php echo get_post_meta($post->ID, 'link-to', true); ?>" class="news__title-link"><?php the_title();/*3*/ ?></a>
 										</h2>
 										<div class="news__image">
 											<?php if ( has_post_thumbnail() ) {the_post_thumbnail('medium');} ?>
@@ -62,8 +62,8 @@
 										<p><?php echo get_post_meta($post->ID, 'summary', true); ?></p>
 								 		<a class="read-more" href="<?php echo get_post_meta($post->ID, 'link-to', true); ?>">Read more</a>
 								 	<?php else : ?>
-								 		<h2 class="news-title news-title--no-link"><?php the_title();/*3*/ ?></h2>
-										<p class="announcement"><?php echo get_post_meta($post->ID, 'summary', true); ?></p>
+								 		<h2 class="news__title news__title--no-link"><?php the_title();/*3*/ ?></h2>
+										<p class="news__announcement"><?php echo get_post_meta($post->ID, 'summary', true); ?></p>
 								 	<?php endif; ?>
 							<?php endwhile; endif; wp_reset_postdata(); ?>
 						</div>
@@ -73,6 +73,9 @@
 						<?php dynamic_sidebar( 'sidebar-3' ); ?>
 					</div>
 				</aside>
+				<section class="hp-intro">
+					<?php if (get_field('home') ) {the_field('home');} ?>
+				</section>
 				<?php
 
 					/* translators: %s: Name of current post */
@@ -84,17 +87,16 @@
 				?>
 				
 			</div><!-- .entry-content -->
-			<section class="homepage-features">
+			<section class="hp-features">
 				<?php query_posts('category_name=splash-image'); /*1, 2*/
-					if ( have_posts() ) while ( have_posts() ) : the_post(); ?><div class="image-wrapper">
-						<a href="<?php echo get_post_meta($post->ID, 'link-to', true); ?>" class="hp-splash-link">
-							<span class="hp-item">
-								<div class="image-link">
+					if ( have_posts() ) while ( have_posts() ) : the_post(); ?><div class="hp-features__wrapper">
+						<a href="<?php echo get_post_meta($post->ID, 'link-to', true); ?>" class="hp-features__link">
+							<span class="hp-features__item">
 								<?php if ( '' !== get_the_post_thumbnail()) : ?>
 									<?php the_post_thumbnail( 'twentyseventeen-featured-image' ); ?>
-								<?php endif; ?></div>
+								<?php endif; ?>
+								<h2 class="hp-features__title"><?php the_title(); ?></h2>
 							</span>
-							<h2 class="splash-title"><?php the_title(); ?></h2>
 						</a>
 					</div><?php endwhile; ?> <?php wp_reset_query(); ?></section>
 			

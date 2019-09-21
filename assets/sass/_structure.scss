@@ -7,7 +7,11 @@ body.page-two-column:not(.archive) #primary .entry-header{
 
 .navigation-top .wrap,
 .wrap{
-	max-width: 1300px;
+	max-width: 1400px;
+}
+
+.navigation-top .wrap {
+	padding: 0 30px;
 }
 
 .panel-content .wrap--home{

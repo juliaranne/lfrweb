@@ -42,13 +42,13 @@ body.page:not(.twentyseventeen-front-page) .entry-title{
 .entry-content p{
 	margin-bottom: 15px;
 	font-size: 18px;
-	line-height: 1.44em;
+	line-height: 1.48em;
 	max-width: 810px;
 }
 
 .page.home .entry-content h6,
 .page.home .entry-content h5{
-	line-height: 1.44em;
+	line-height: 1.48em;
 }
 
 .entry-content h2,
@@ -115,7 +115,6 @@ body.page:not(.twentyseventeen-front-page) .entry-title{
 }
 .entry-content h6{
 	display: inline-block;
-	width: 60%;
 	text-transform: none;
 	letter-spacing: initial;
 	vertical-align: top;
@@ -136,10 +135,10 @@ hr{
 	color: $lfr-red;
 }
 
-.splash-title{color:$lfr-red;}
+.hp-features__title{color:$lfr-red;}
 
 .sidebar__block--links a:after,
-.splash-title:after,
+.hp-features__title:after,
 .inpage-menu-item a:after,
 .cta-link a:after,
 .cta-link:after,
@@ -156,16 +155,16 @@ hr{
 .cta-link:hover:after,
 .cta-link a:hover:after,
 .calendar-link:hover:after,
-.hp-splash-link:hover .splash-title:after{
+.hp-features__link:hover .hp-features__title:after{
 	opacity: 1;
 }
 
 .sidebar__block--links a:after,
-.splash-title:after,
+.hp-features__title:after,
 .inpage-menu-item a:after,
 .cta-link a:after,
 .calendar-link:after,
-.image-link img,
+.hp-features__image-link img,
 .cta-link:after{
   transition: opacity .2s linear;
 }
