@@ -7,6 +7,8 @@ if( is_front_page() ){
 }
 add_action( 'wp_enqueue_scripts', 'childtheme_enqueue_styles' );
 
+add_filter('acf/settings/remove_wp_meta_box', '__return_false');
+
 // Remove p tags around inline images
 function filter_ptags_on_images($content){
     return preg_replace('/<p>\\s*?(<a .*?><img.*?><\\/a>|<img.*?>)?\\s*<\\/p>/s', '\1', $content);
@@ -22,6 +24,7 @@ function register_my_menus() {
 		'social' => __( 'Social Links Menu', 'twentyseventeen' ),
 		'members' => __('Members pages', 'twentyseventeen-child' ),
 		'run-menu' => __('Run pages menu', 'twentyseventeen-child' ),
+		'tri-menu' => __('Triathalon pages menu', 'twentyseventeen-child' ),
 	) );
 } 
 add_action( 'init', 'register_my_menus' );

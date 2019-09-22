@@ -1,6 +1,6 @@
 <?php
 /**
- * Template part for displaying page content in page.php
+ * Template part for displaying page content in page.php with menu
  *
  * @link https://codex.wordpress.org/Template_Hierarchy
  *
@@ -16,8 +16,10 @@
 		<?php the_title( '<h1 class="entry-title">', '</h1>' ); ?>
 		<?php twentyseventeen_edit_link( get_the_ID() ); ?>
 	</header><!-- .entry-header -->
-	<div class="entry-content">
-
+	<aside class="inpage-menu">
+    <?php wp_nav_menu( array( 'theme_location' => 'tri-menu' ) ); ?>
+	</aside>
+	<div class="entry-content entry-content__with-menu">
 		<?php if ( !function_exists('dynamic_sidebar') || !dynamic_sidebar("sidebar-8") ) : ?>
 		<?php endif;?>
 		<?php
@@ -29,14 +31,7 @@
 				'after'  => '</div>',
 			) );
 		?>
-		<?php
-		query_posts('category_name=people'); /*1, 2*/
-		if ( have_posts() ) while ( have_posts() ) : the_post(); ?>
-		<article class="page-post page-post--person">
-			<h3 class="text-red title-no-margin"><?php the_title();/*3*/ ?></h3>
-			<?php the_content(); ?>
-		</article>
-		<?php endwhile; ?> <?php wp_reset_query(); /*4*/ ?>
+		
 		
 	</div><!-- .entry-content -->
 </article><!-- #post-## -->

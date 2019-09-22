@@ -31,22 +31,6 @@ body.page-two-column:not(.archive) #primary .entry-content__with-menu{
 	}
 }
 
-.inpage-menu-list{
-	max-width: 90%;
-	border-bottom: 1px dotted $lfr-red;
-	margin-right: 10%;
-}
-
-.inpage-menu-item{
-	padding:8px 0 4px;
-	border-top:1px dotted $lfr-red;
-}
-
-.inpage-menu-item a{
-	color:$lfr-red;
-	display: block;
-}
-
 .content-area--calendar{
 	width: 100%;
 }
@@ -61,13 +45,18 @@ body.page-two-column:not(.archive) #primary .entry-content__with-menu{
 
 .entry-content .title-no-margin{margin-top:0;}
 
-.page-template-page_people .entry-content img{
+.page-post--person img{
 	display: inline-block;
 	max-width: 44%;
-	margin-bottom: 10px;
+	margin-bottom: 16px;
 	clear: both;
 	float: none;
 	margin-right: 15px;
+	border-radius: 300px;
+}
+
+.page-post--person {
+	margin-bottom: 60px;
 }
 
 @media screen and ( max-width: 48em ) {
@@ -76,6 +65,9 @@ body.page-two-column:not(.archive) #primary .entry-content__with-menu{
 	.inpage-menu {
 		width: 100%;
 		margin-bottom: 35px;
+		.menu {
+			margin-right: 0;
+		}
 	}
 
 	.inpage-menu-list {

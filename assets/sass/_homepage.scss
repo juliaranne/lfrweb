@@ -63,10 +63,9 @@ body.home .entry-content{
 	color:$lfr-red;
 }
 
-/** WIDGETS **/
 .hp-features{
 	margin-top: 40px;
-	margin-bottom: 90px;
+	margin-bottom: 40px;
 }
 
 h2.widget-title{
@@ -88,18 +87,10 @@ h2.widget-title{
 .hp-features__item{
 	position: relative;
 	display: inline-block;
-	width: 100%;
-	padding-bottom: 65%;
-	height: 0;
-}
-
-.hp-features__item::after {
-  content: '';
-  display: block;
-  background: $darkergrey;
-  position: absolute;
-  height: 100%;
-  width: 90%;
+	width: 95%;
+	padding-bottom: 66%;
+  height: 0;
+  background-color: $darkergrey;
   top: 25px;
   left: 25px;
 }
@@ -107,27 +98,31 @@ h2.widget-title{
 .hp-features__item img {
   position: absolute;
   z-index: 1;
-  max-width: 90%;
+  max-width: 100%;
+  top: -25px;
+  left: -25px;
 }
 
 .hp-features__wrapper{
 	display: inline-block;
-	width: 32%;
+	width: 49%;
   position: relative;
   margin-right: 2%;
+  margin-bottom: 50px;
 }
 
-.hp-features .hp-features__wrapper:last-of-type{
+.hp-features .hp-features__wrapper:nth-child(even){
 	margin-right: 0;
 }
 
 .hp-features__title{
   color: #ff1919;
   position: absolute;
-  top: calc(100% - 10px);
+  bottom: 8px;
   z-index: 2;
-  left: 40px;
+  left: 20px;
   font-size: 19px;
+  margin: 0;
 }
 
 .hp-features__image-link .textwidget{
@@ -146,6 +141,11 @@ h2.widget-title{
 @media screen and ( max-width: 48em ) {
   .hp-intro {
     max-width: 100%;
+  }
+
+  .hp-features__title{
+    bottom: 5px;
+    font-size: 18px;
   }
 
   /** HOMEPAGE MENU **/
@@ -172,6 +172,7 @@ h2.widget-title{
   }
 
   /** HOMEPAGE **/
+
   .panel-content--calendar{
     padding:0 0 20px 0;
   }
@@ -198,25 +199,23 @@ h2.widget-title{
   }
 
   .hp-features__wrapper {
-    display: block;
     width: 100%;
     margin-right: 0;
-    margin-bottom: 70px;
+    margin-bottom: 30px;
   }
 
-  .hp-features__item::after {
-    width: 100%;
-    height: calc(100% + 45px);
-    top: 0;
-    left: 0;
+  .hp-features__item{
+    padding-bottom: 69%;
+    top: 15px;
+    left: 15px;
   }
-
+  
   .hp-features__item img {
-    max-width: 100%;
+    top: -15px;
+    left: -15px;
   }
 
   .hp-features__title{
-    top: calc(100% + 14px);
     left: 15px;
   }
 
